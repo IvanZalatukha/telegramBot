@@ -5,9 +5,9 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 
 public class StartCommand implements Command{
 
-    private SendMessageBotService sendMessageBotService;
+    private final SendMessageBotService sendMessageBotService;
 
-    public final static String START_MESSAGE = "Привет Бубка. Я Bybka Telegram Bot. Я помогу тебе ничего не забыть";
+    public final static String START_MESSAGE = "Привет Бубка. Я Bybka Telegram Bot. Я помогу тебе ничего не забывать";
 
     public StartCommand(SendMessageBotService sendMessageBotService) {
         this.sendMessageBotService = sendMessageBotService;
